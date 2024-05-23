@@ -1,9 +1,14 @@
-n = int(input('Write a number: '))
+# Define a entrada
+valor = int(input("Digite um número: "))
 
-fat = 1
-i = 1
+# Cria os contadores
+fatorial = 1
+numero = 1
 
-while i <= n:
-    fat *= i
-    i += 1
-print (fat)
+# Cálculo do fatorial
+while numero <= valor:
+    fatorial *= numero
+    numero += 1
+
+# Retorna o fatorial
+print(fatorial)
