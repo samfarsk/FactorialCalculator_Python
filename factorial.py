@@ -1,6 +1,6 @@
 while True:
     # Define a entrada
-    valor = int(input("Digite um número: "))
+    valor = int(input("Digite um número inteiro: "))
 
     # Cria os contadores
     fatorial = 1
@@ -12,4 +12,4 @@ while True:
         numero += 1
 
     # Retorna o fatorial
-    print(fatorial)
+    print(f"\nO fatorial de {valor} é {fatorial}.")
