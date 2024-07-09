@@ -1,15 +1,15 @@
-while True:
-    # Define a entrada
-    valorInput = int(input("Digite um número inteiro: "))
-
-    # Cria os contadores
-    fatorial = 1
-    contagem = 1
-
-    # Cálculo do fatorial
-    while contagem <= valorInput:
-        fatorial *= contagem
-        contagem += 1
-
-    # Retorna o fatorial
-    print(f"\nO fatorial de {valorInput} é {fatorial}.\n")
+def main():
+  
+  while True:
+    num = int(input('\nDigite um valor entre 0 e 997 para saber seu fatorial: '))
+    
+    def fatorial(n):
+      if n <= 1:
+        return 1
+      return n * fatorial(n-1)
+    
+    print('-' * 20)
+    print(fatorial(num))
+    
+if __name__ == "__main__":
+  main()
